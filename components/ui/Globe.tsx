@@ -232,12 +232,19 @@ export function Globe({ globeConfig, data }: WorldProps) {
 
 export function WebGLRendererConfig() {
   const { gl, size } = useThree();
+  const [isBrowser, setIsBrowser] = useState(false);
 
   useEffect(() => {
+    setIsBrowser(true);
+  }, []);
+
+  useEffect(() => {
+    if (!isBrowser) return;
+
     gl.setPixelRatio(window.devicePixelRatio);
     gl.setSize(size.width, size.height);
     gl.setClearColor(0xffaaff, 0);
-  }, []);
+  }, [isBrowser, gl, size.width, size.height]);
 
   return null;
 }
