@@ -51,20 +51,12 @@ const Hero = () => {
 
                     <TextGenerateEffect
                         words="Bridging Creativity and Security through Code"
-                        className="text-[40px] md:text-5xl lg:text-6xl"
+                        className="text-[20px] md:text-4xl lg:text-5xl leading-tight max-w-xl"
                     />
 
-                    <p className="md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-                        Hi! I&apos;m Nguyễn Thanh Sang (Kuro), a Vietnamese highschool
-                        student passionate about{" "}
-                        <span className="bg-white/10 text-blue-300 font-medium rounded-md px-1">
-              Mobile App Development
-            </span>{" "}
-                        and{" "}
-                        <span className="bg-purple-500/10 text-pink-400 font-medium rounded-md px-1">
-              DevSecOps
-            </span>
-                        .
+                    <p className="md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl max-w-xl">
+                        Hi! I&apos;m Nguyen Thanh Sang (Kuro), a Vietnamese highschool student 
+                        passionate about <span className="bg-white/10 text-blue-300 font-medium rounded-md px-1">Mobile App Development</span> and <span className="bg-purple-500/10 text-pink-400 font-medium rounded-md px-1">DevSecOps.</span>
                     </p>
 
                     <a href="#about">
@@ -82,7 +74,7 @@ const Hero = () => {
                     <div className="absolute inset-0 z-10 rounded-2xl bg-blue-500/40 blur-[100px] opacity-40 group-hover:opacity-60 transition-all duration-700" />
                     {/* Main Image */}
                     <Image
-                        src="/pfp.PNG"
+                        src="/pfp.png"
                         alt="Hero illustration"
                         fill
                         className="object-cover rounded-2xl shadow-[0_0_60px_10px_rgba(59,130,246,0.3)] group-hover:shadow-[0_0_90px_20px_rgba(59,130,246,0.4)] transition-all duration-700"
